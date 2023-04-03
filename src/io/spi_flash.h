@@ -3,7 +3,7 @@
  * Created Date: 2023-04-03 11:12:25 am
  * Author: Mathieu Escouteloup
  * -----
- * Last Modified: 2023-04-03 11:21:26 am
+ * Last Modified: 2023-04-03 03:00:46 pm
  * Modified By: Mathieu Escouteloup
  * -----
  * License: See LICENSE.md
@@ -92,16 +92,11 @@ volatile uint8_t spi_flash_status_full_u32();
 volatile uint8_t spi_flash_status_av_u8();
 volatile uint8_t spi_flash_status_av_u16();
 volatile uint8_t spi_flash_status_av_u32();
+
 void spi_flash_config(uint8_t en, uint8_t mode, uint8_t cmd_auto, uint8_t irq, uint32_t cycle);
-
-inline __attribute__ ((always_inline)) void spi_flash_write_cycle(uint32_t cycle) {
-  SPI_FLASH->CYCLE = cycle;
-}
-
 inline __attribute__ ((always_inline)) void spi_flash_write_addr(uint32_t addr) {
   SPI_FLASH->ADDR = addr;
 }
-
 inline __attribute__ ((always_inline)) void spi_flash_write_offset(uint32_t offset) {
   SPI_FLASH->OFFSET = offset;
 }
@@ -122,6 +117,6 @@ inline __attribute__ ((always_inline)) uint32_t spi_flash_read_u32() {
   return *((volatile uint32_t *) SPI_FLASH->DATA);
 }
 
-void spi_flash_read_mb(uint32_t addr, uint8_t *data, uint32_t size);
+void spi_flash_read_array(uint32_t addr, uint8_t *data, uint32_t size);
 
 #endif
