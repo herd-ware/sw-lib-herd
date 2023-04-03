@@ -1,7 +1,7 @@
 INCLUDE = -Isrc/pltf/
 INCLUDE += -Isrc/sys/
 
-LIB_HERD_LIBS = sys
+LIB_HERD_LIBS = sys io
 
 build-dir:
 	mkdir -p ${PRJ_DIR}/obj

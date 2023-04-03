@@ -3,7 +3,7 @@
  * Created Date: 2023-03-31 02:20:22 pm
  * Author: Mathieu Escouteloup
  * -----
- * Last Modified: 2023-03-31 02:24:56 pm
+ * Last Modified: 2023-04-03 11:04:52 am
  * Modified By: Mathieu Escouteloup
  * -----
  * License: See LICENSE.md
@@ -20,10 +20,10 @@
 //         CONFIGURATION
 // ******************************
 // ------------------------------
-//           CHAU1V000
+//          P32CHAU1V000
 // ------------------------------
-#ifdef CONFIG_CHAU1V000
-  #include "CHAU1V000.h"
+#ifdef CONFIG_P32CHAU1V000
+  #include "P32CHAU1V000.h"
 // ------------------------------
 //            DEFAULT
 // ------------------------------

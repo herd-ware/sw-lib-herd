@@ -3,7 +3,7 @@
  * Created Date: 2023-03-31 02:17:43 pm
  * Author: Mathieu Escouteloup
  * -----
- * Last Modified: 2023-03-31 02:24:35 pm
+ * Last Modified: 2023-04-03 10:15:07 am
  * Modified By: Mathieu Escouteloup
  * -----
  * License: See LICENSE.md
@@ -55,6 +55,6 @@ inline __attribute__ ((always_inline)) uintx_t read_cycle() {
 // ******************************
 //            FUNCTION
 // ******************************
-void wait_ncycles(uintx_t ncycles);
+void wait_cycle(uintx_t cycle);
 
 #endif

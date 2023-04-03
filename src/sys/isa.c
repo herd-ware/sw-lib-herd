@@ -3,7 +3,7 @@
  * Created Date: 2023-03-31 02:17:43 pm
  * Author: Mathieu Escouteloup
  * -----
- * Last Modified: 2023-03-31 02:17:56 pm
+ * Last Modified: 2023-04-03 10:15:02 am
  * Modified By: Mathieu Escouteloup
  * -----
  * License: See LICENSE.md
@@ -16,8 +16,8 @@
 #include "isa.h"
 
 
-void wait_ncycles(uintx_t ncycles) {
+void wait_cycle(uintx_t cycle) {
   uintx_t base = read_cycle();
 
-  while (base + ncycles > read_cycle());
+  while (base + cycle > read_cycle());
 }
