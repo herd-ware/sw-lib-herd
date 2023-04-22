@@ -3,7 +3,7 @@
  * Created Date: 2023-03-31 02:18:48 pm
  * Author: Mathieu Escouteloup
  * -----
- * Last Modified: 2023-04-03 11:07:43 am
+ * Last Modified: 2023-04-22 08:19:55 am
  * Modified By: Mathieu Escouteloup
  * -----
  * License: See LICENSE.md
@@ -20,10 +20,10 @@
 // ******************************
 //          P32CHAU1V000
 // ******************************
-#if (IS_SIM)
-  #define CPU_FREQ        50000000
+#if (IS_SIM > 0)
+  #define CPU_FREQ        1152000  
 #else
-  #define CPU_FREQ        1152000
+  #define CPU_FREQ        50000000
 #endif
 #define XLEN              32
 #define ISA_NAME          PRIV
